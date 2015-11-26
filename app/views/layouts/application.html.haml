@@ -4,14 +4,16 @@
     %title Martial Nation
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     %link{href: "https://fonts.googleapis.com/css?family=Lato:400,700,300", rel: "stylesheet", type: "text/css"}
+    %link{href: "https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css", rel: "stylesheet"}
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
     %header.main_header.clearfix
-      #logo
-        %p Martial Nation
-      #buttons
-        = link_to "New Post", new_post_path
+      .wrapper
+        #logo
+          %p Martial Nation
+        #buttons
+          = link_to "New Post", new_post_path
 
 
     .wrapper
